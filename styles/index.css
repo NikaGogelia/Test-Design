@@ -19,6 +19,7 @@ body {
 body {
   font-family: var(--montserrat);
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -64,6 +65,21 @@ h2 {
 
 .btn-light:hover svg path {
   fill: #000;
+}
+
+/* Image Overlay */
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    205.96deg,
+    rgba(67, 26, 26, 0) -7.14%,
+    #431a1a 121.86%
+  );
+  z-index: 0;
 }
 
 /* Navbar */
@@ -190,7 +206,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 16px 0px -10px var(--blue);
+  box-shadow: 0px 16px 0px -8px var(--blue);
   z-index: 1;
 }
 
@@ -203,20 +219,6 @@ header {
 .introduction-content > p {
   opacity: 0.7;
   line-height: 160%;
-}
-
-.introduction .image-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-    205.96deg,
-    rgba(67, 26, 26, 0) -7.14%,
-    #431a1a 121.86%
-  );
-  z-index: -1;
 }
 
 /* Services */
@@ -258,8 +260,13 @@ header {
   background-color: var(--light);
 }
 
-.news-wrapper > div {
+.news-wrapper > div:first-of-type,
+.news-card {
   display: flex;
+}
+
+.news-wrapper {
+  position: relative;
 }
 
 .news-wrapper > div {
@@ -269,4 +276,56 @@ header {
 
 .news-arrows > img {
   cursor: pointer;
+}
+
+.news-content {
+  overflow: hidden;
+}
+
+.news-profiles {
+  display: grid;
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+
+.news-card {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: flex-end;
+  box-shadow: 0px 0px 0px 0px var(--red);
+  transition: 0.3s linear;
+}
+
+.news-card:nth-of-type(1) {
+  background-image: url("../assets/images/img-2.png");
+}
+
+.news-card:nth-of-type(2) {
+  background-image: url("../assets/images/img-3.png");
+}
+
+.news-card:nth-of-type(3) {
+  background-image: url("../assets/images/img-4.png");
+}
+
+.news-card:nth-of-type(4) {
+  background-image: url("../assets/images/img-5.png");
+}
+
+.news-card:hover {
+  box-shadow: 0px 10px 0px -4px var(--red);
+}
+
+.news-card-body {
+  position: relative;
+  width: 100%;
+  color: var(--white);
+  z-index: 1;
+}
+
+.news-card-body > p {
+  opacity: 0.7;
 }
