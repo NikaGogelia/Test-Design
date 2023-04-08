@@ -1,0 +1,123 @@
+@media only screen and (min-width: 1024px) {
+  :root {
+    --paddingX: 15.5em;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 0.9em 2em;
+  }
+
+  /* Navbar */
+  header {
+    padding: 0 var(--paddingX);
+  }
+
+  .navbar {
+    padding: 2em 0 0;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .brand > img {
+    width: 3.5em;
+    height: 4.5em;
+  }
+
+  .brand > h3 {
+    font-size: 1.4em;
+    margin: 1em;
+  }
+
+  .navbar-link {
+    margin: 0 1.2em;
+  }
+
+  .navbar-link > a {
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+  }
+
+  .search-bar {
+    padding: 0.7em 0;
+  }
+
+  .search-bar > input {
+    font-size: 0.9em;
+  }
+
+  .search-bar > img {
+    width: 1em;
+    height: 1em;
+  }
+
+  /* Main */
+  /* Introduction */
+  .introduction {
+    padding: 3.5em 6.8em;
+  }
+
+  .introduction-wrapper {
+    width: 100%;
+    height: 48em;
+  }
+
+  .introduction-content {
+    padding: 19em 9em 0;
+  }
+
+  .introduction-content > h1 {
+    font-size: 3.8em;
+    margin: 0 0 0.5em;
+  }
+
+  .introduction-content > p {
+    font-size: 1em;
+    width: 46em;
+    margin: 0 0 1.6em;
+  }
+
+  /* Services */
+  .services {
+    padding: 2em var(--paddingX) 6em;
+  }
+
+  .services-wrapper {
+    text-align: center;
+  }
+
+  .services-wrapper > h1 {
+    font-size: 2em;
+    margin: 0 0 3em;
+  }
+
+  .services-content {
+    padding: 0 8em;
+  }
+
+  .service-img {
+    padding: 2.2em;
+    margin-bottom: 0.8em;
+  }
+
+  .service-img > img {
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  .service > h3 {
+    font-size: 1.8em;
+  }
+
+  /* News */
+  .news {
+    padding: 2em var(--paddingX) 6em;
+  }
+
+  .news h1 {
+    font-size: 2em;
+  }
+
+  .news-arrows > img {
+    margin: 0 1em;
+  }
+}

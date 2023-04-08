@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* Colors */
+  --white: #ffff;
+  --light: #f8f8fa;
+  --black: #0000;
+  --red: #ef5555;
+  --blue: #2b3252;
+  /* Fonts */
+  --montserrat: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--montserrat);
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: var(--montserrat);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.btn > svg {
+  margin-left: 0.5em;
+}
+
+.btn > svg path {
+  transition: 0.4s;
+}
+
+.btn-light {
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.btn-light > svg path {
+  fill: var(--white);
+}
+
+.btn-light:hover {
+  background-color: var(--white);
+  color: #000;
+  box-shadow: 0 0 0 5px #ffffff7c;
+}
+
+.btn-light:hover svg path {
+  fill: #000;
+}
+
+/* Navbar */
+header {
+  background-color: var(--white);
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0; */
+  z-index: 4;
+}
+
+.navbar {
+  width: 100%;
+  display: grid;
+  color: var(--blue);
+}
+
+.navbar > div,
+.navbar > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar > div > div {
+}
+
+.navbar > div:first-of-type {
+  justify-content: flex-start;
+}
+
+.navbar > div:nth-of-type(2) {
+  justify-content: center;
+}
+
+.navbar > div:last-of-type {
+  justify-content: flex-end;
+}
+
+/* Navbar Brand */
+.brand {
+  text-transform: uppercase;
+}
+
+/* Navbar Links */
+.navbar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-link .link,
+.navbar-link .link-border {
+  transition: 0.3s;
+}
+
+.navbar-link .link {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.navbar-link:hover .link,
+.active .link {
+  color: var(--red) !important;
+}
+
+.navbar-link .link-border {
+  width: 0;
+  height: 1px;
+  background-color: var(--red);
+}
+
+.active .link-border {
+  width: 1em;
+}
+
+/* Navbar Search */
+.search-bar {
+  border-bottom: 1px solid #eaecf0;
+}
+
+.search-bar > input {
+  font-family: var(--montserrat);
+}
+
+.search-bar > input,
+.search-bar > input:active {
+  border: none;
+  outline: none;
+}
+
+.search-bar > input::-webkit-input-placeholder {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.search-bar > input::-moz-placeholder {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.search-bar > input:-ms-input-placeholder {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.search-bar > input::-ms-input-placeholder {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.search-bar > input::placeholder {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+/* Main */
+/* Introduction */
+.introduction-wrapper {
+  display: flex;
+  position: relative;
+  background-image: url("../assets/images/img-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 16px 0px -10px var(--blue);
+  z-index: 1;
+}
+
+.introduction-content {
+  width: 100%;
+  z-index: 2;
+  color: var(--white);
+}
+
+.introduction-content > p {
+  opacity: 0.7;
+  line-height: 160%;
+}
+
+.introduction .image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    205.96deg,
+    rgba(67, 26, 26, 0) -7.14%,
+    #431a1a 121.86%
+  );
+  z-index: -1;
+}
+
+/* Services */
+.services-content,
+.service,
+.service-img {
+  display: flex;
+}
+
+.service,
+.service-img {
+  justify-content: center;
+  align-items: center;
+}
+
+.services-content {
+  justify-content: space-between;
+}
+
+.service {
+  flex-direction: column;
+}
+
+.service-img {
+  background-color: var(--light);
+  border-radius: 50%;
+  box-shadow: 0px 7px 0px 0px #f0f1f1;
+  transition: 0.3s linear;
+}
+
+.service:hover .service-img {
+  background-color: #f0f1f1;
+  box-shadow: 0px 7px 0px 0px #e7e7e7;
+  transform: scale(1.08);
+}
+
+/* News */
+.news {
+  background-color: var(--light);
+}
+
+.news-wrapper > div {
+  display: flex;
+}
+
+.news-wrapper > div {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-arrows > img {
+  cursor: pointer;
+}
