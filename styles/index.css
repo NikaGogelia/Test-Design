@@ -58,7 +58,7 @@ h2 {
   background-color: transparent;
   font-weight: 700;
   letter-spacing: 2px;
-  border-radius: 8px;
+  border-radius: 0.6em;
   transition: 0.4s linear;
   cursor: pointer;
 }
@@ -84,7 +84,7 @@ h2 {
 .btn-light:hover {
   background-color: var(--white);
   color: #000;
-  box-shadow: 0 0 0 5px #ffffff7c;
+  box-shadow: 0 0 0 0.3em #ffffff7c;
 }
 
 .btn-light:hover svg path {
@@ -104,7 +104,7 @@ h2 {
 .btn-red:hover {
   background-color: var(--red);
   color: var(--white);
-  box-shadow: 0 0 0 5px #ef555570;
+  box-shadow: 0 0 0 0.3em #ef555570;
 }
 
 .btn-red:hover svg path {
@@ -468,14 +468,20 @@ footer > div > div,
 }
 
 .footer-form div input,
-.footer-form textarea,
-.footer-form div input:active,
-.footer-form textarea:active {
+.footer-form textarea {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
+  border-radius: 0.6em;
   outline: none;
   color: var(--white);
+  transition: 0.3s;
+}
+
+.footer-form div input:active,
+.footer-form textarea:active,
+.footer-form div input:focus,
+.footer-form textarea:focus {
+  border: 1px solid var(--white);
 }
 
 .footer-form textarea {
@@ -483,35 +489,11 @@ footer > div > div,
   overflow: hidden;
 }
 
-.footer-form div input::-webkit-input-placeholder,
-.footer-form textarea::-webkit-input-placeholder {
-  font-family: var(--montserrat);
-  font-weight: 400;
-}
-
-.footer-form div input::-moz-placeholder,
-.footer-form textarea::-moz-placeholder {
-  font-family: var(--montserrat);
-  font-weight: 400;
-}
-
-.footer-form div input:-ms-input-placeholder,
-.footer-form textarea:-ms-input-placeholder {
-  font-family: var(--montserrat);
-  font-weight: 400;
-}
-
-.footer-form div input::-ms-input-placeholder,
-.footer-form textarea::-ms-input-placeholder {
-  font-family: var(--montserrat);
-  font-weight: 400;
-}
-
-.footer-form div input::placeholder,
+/* .footer-form div input::placeholder,
 .footer-form textarea::placeholder {
   font-family: var(--montserrat);
   font-weight: 400;
-}
+} */
 
 .form-button {
   position: absolute;
@@ -523,5 +505,5 @@ footer > div > div,
 }
 
 .form-button:hover {
-  box-shadow: 0 0 0 5px #ef555570;
+  box-shadow: 0 0 0 0.3em #ef555570;
 }

@@ -1,2 +1,774 @@
 @media only screen and (max-width: 1024px) {
+  :root {
+    --paddingX: 6em;
+    --introductionPaddingX: 2.5em;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .btn {
+    font-size: 0.65em;
+    padding: 0.75em 1.7em;
+  }
+
+  .btn > svg {
+    width: 1em;
+    height: 2em;
+  }
+
+  .brand > img {
+    width: 1.8em;
+    height: 2.8em;
+  }
+
+  .brand > h3 {
+    margin: 0;
+    font-size: 0.8em;
+    margin-left: 0.7em;
+  }
+
+  /* Header */
+  header {
+    padding: 0 var(--paddingX);
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 1.2em 0 0;
+    grid-template-columns: 1fr 2.5fr 1fr;
+  }
+
+  .navbar-link {
+    margin: 0 0.5em;
+  }
+
+  .navbar-link > a {
+    font-size: 0.7em;
+    margin-bottom: 0.25em;
+  }
+
+  .search-bar {
+    padding: 0.5em 0;
+  }
+
+  .search-bar > input {
+    font-size: 0.62em;
+  }
+
+  .search-bar > img {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  /* Main */
+  /* Introduction */
+  .introduction {
+    padding: 2em var(--introductionPaddingX);
+  }
+
+  .introduction-wrapper {
+    width: 100%;
+  }
+
+  .introduction-content {
+    padding: 12em 3.3em 3em;
+  }
+
+  .introduction-content > h1 {
+    font-size: 2.2em;
+    margin: 0 0 0.3em;
+  }
+
+  .introduction-content > p {
+    font-size: 0.75em;
+    width: 45em;
+    margin: 0 0 1.2em;
+  }
+
+  /* Services */
+  .services {
+    padding: 1.5em var(--paddingX) 5em;
+  }
+
+  .services-wrapper {
+    text-align: center;
+  }
+
+  .services-wrapper > h1 {
+    font-size: 1.4em;
+    margin: 0 0 1.5em;
+  }
+
+  .services-content {
+    padding: 0 4em;
+  }
+
+  .service-img {
+    padding: 1.5em;
+    margin-bottom: 0.6em;
+  }
+
+  .service-img > img {
+    width: 3em;
+    height: 3em;
+  }
+
+  .service > h3 {
+    font-size: 1.1em;
+  }
+
+  /* News */
+  .news {
+    padding: 3em var(--paddingX) 5em;
+  }
+
+  .news h1 {
+    font-size: 1.4em;
+  }
+
+  .news-arrows > button {
+    margin: 0 0.4em;
+  }
+
+  .news-arrows > button > img {
+    width: 2.2em;
+  }
+
+  .news-content {
+    margin-top: 1em;
+    width: 100vw;
+    padding: 1em 0;
+  }
+
+  .news-profiles {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  .news-card {
+    padding: 1.5em;
+    width: 13em;
+    height: 22em;
+  }
+
+  .news-card-body > h3 {
+    font-size: 1.2em;
+    margin: 0 0 0.6em;
+  }
+
+  .news-card-body > p {
+    font-size: 0.7em;
+    margin: 0 0 1.5em;
+  }
+
+  /* About Company */
+  .about-company {
+    padding: 6em var(--paddingX);
+  }
+
+  .about-company-content > img {
+    width: 20em;
+    height: 25em;
+    margin-right: 2.5em;
+  }
+
+  .about-company-content > div > h3 {
+    font-size: 1.3em;
+    margin: 0 0 1em;
+  }
+
+  .about-company-content > div > p {
+    font-size: 0.75em;
+    width: 100%;
+    margin: 0 0 1.5em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 3em var(--paddingX);
+    grid-template-columns: 1fr 2fr 2.2fr;
+  }
+
+  .footer-brand {
+    margin-bottom: 1.2em;
+  }
+
+  .footer-links a {
+    font-size: 0.65em;
+  }
+
+  .social-links {
+    margin-top: 1em;
+  }
+
+  .social-links img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .social-links > a:first-of-type {
+    margin-right: 1.1em;
+  }
+
+  .footer-form input {
+    width: 11em;
+    padding: 0.5em 0.7em;
+    font-size: 0.6em;
+  }
+
+  .footer-form input:first-of-type {
+    margin-right: 0.5em;
+  }
+
+  .footer-form textarea {
+    margin-top: 1em;
+    padding: 0.5em 0.7em 3em;
+    font-size: 0.8em;
+  }
+
+  .form-button {
+    padding: 0.9em;
+    font-size: 0.45em;
+  }
+
+  /* Below 870px */
+  @media only screen and (max-width: 870px) {
+    :root {
+      --paddingX: 4em;
+      --introductionPaddingX: 2em;
+    }
+
+    .btn {
+      font-size: 0.6em;
+      padding: 0.6em 1.6em;
+    }
+
+    /* Main */
+    /* Introduction */
+    .introduction-content {
+      padding: 12em 2em 3em;
+    }
+  }
+
+  /* Below 768px */
+  @media only screen and (max-width: 768px) {
+    :root {
+      --paddingX: 2em;
+      --introductionPaddingX: 0;
+    }
+
+    .btn {
+      font-size: 0.55em;
+    }
+
+    .brand > img {
+      width: 1.5em;
+      height: 2.5em;
+    }
+
+    .brand > h3 {
+      margin: 0;
+      font-size: 0.6em;
+      margin-left: 0.5em;
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 0.8em 0;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .navbar-link > a {
+      font-size: 0.65em;
+    }
+
+    .search-bar {
+      padding: 0.4em 0;
+    }
+
+    .search-bar > input {
+      font-size: 0.55em;
+    }
+
+    .search-bar > img {
+      width: 0.7em;
+      height: 0.7em;
+    }
+
+    /* Main */
+    /* Introduction */
+    .introduction {
+      padding: 0;
+    }
+
+    .introduction-wrapper {
+      box-shadow: 0px 6px 0px 0px var(--blue);
+    }
+
+    .introduction-content {
+      padding: 8em 1.8em 3em;
+    }
+
+    .introduction-content > h1 {
+      font-size: 1.8em;
+    }
+
+    .introduction-content > p {
+      font-size: 0.65em;
+      width: 40em;
+    }
+
+    /* Services */
+    .services {
+      padding: 3em var(--paddingX);
+    }
+
+    .services-wrapper > h1 {
+      font-size: 1.1em;
+      margin: 0 0 1.2em;
+    }
+
+    .services-content {
+      padding: 0 3em;
+    }
+
+    .service-img {
+      padding: 1.1em;
+      margin-bottom: 0.2em;
+    }
+
+    .service-img > img {
+      width: 2.5em;
+      height: 2.5em;
+    }
+
+    .service > h3 {
+      font-size: 1em;
+    }
+
+    /* News */
+    .news {
+      padding: 3em var(--paddingX);
+    }
+
+    .news h1 {
+      font-size: 1.1em;
+    }
+
+    .news-arrows > button {
+      margin: 0 0.3em;
+    }
+
+    .news-arrows > button > img {
+      width: 2em;
+    }
+
+    .news-content {
+      margin-top: 1em;
+      width: 100%;
+      padding: 1em 0;
+    }
+
+    .news-profiles {
+      grid-column-gap: 15px;
+    }
+
+    .news-card {
+      padding: 1em;
+      width: 12em;
+      height: 16em;
+    }
+
+    .news-card-body > h3 {
+      font-size: 1em;
+    }
+
+    /* About Company */
+    .about-company {
+      padding: 4em var(--paddingX);
+    }
+
+    .about-company-content > img {
+      width: 18em;
+      height: 21em;
+      margin-right: 3em;
+    }
+
+    .about-company-content > div > h3 {
+      font-size: 1.15em;
+      margin: 0 0 0.8em;
+    }
+
+    .about-company-content > div > p {
+      font-size: 0.7em;
+      width: 90%;
+      margin: 0 0 1.2em;
+    }
+
+    /* Footer */
+    footer {
+      padding: 0.5em var(--paddingX) 2em;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footer-brand {
+      grid-area: 1 / 1 / 2 / 2;
+      margin-bottom: 1.3em;
+    }
+
+    .footer-links {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .footer-links a {
+      font-size: 0.7em;
+    }
+
+    .social-links img {
+      width: 1.2em;
+      height: 1.2em;
+    }
+
+    .social-links > a:first-of-type {
+      margin-right: 0.8em;
+    }
+
+    .footer-form {
+      grid-area: 2 / 1 / 3 / 3;
+      justify-content: center;
+    }
+
+    .footer-form input {
+      width: 20em;
+      padding: 0.7em;
+    }
+
+    .footer-form textarea {
+      padding: 0.7em 0.7em 3em;
+    }
+
+    .form-button {
+      padding: 1em;
+      font-size: 0.5em;
+    }
+  }
+
+  /* Below 650px */
+  @media only screen and (max-width: 650px) {
+    .btn {
+      font-size: 0.5em;
+      padding: 0.5em 1.5em;
+    }
+
+    .brand > img {
+      width: 1.2em;
+      height: 2.2em;
+    }
+
+    .brand > h3 {
+      font-size: 0.5em;
+    }
+
+    /* Header */
+    /* Navbar */
+    .navbar-link > a {
+      font-size: 0.55em;
+    }
+
+    .search-bar {
+      padding: 0.4em 0;
+    }
+
+    .search-bar > input {
+      font-size: 0.5em;
+    }
+
+    .search-bar > img {
+      width: 0.6em;
+      height: 0.6em;
+    }
+
+    /* Main */
+    /* Introduction */
+    .introduction-content > h1 {
+      font-size: 1.5em;
+    }
+
+    .introduction-content > p {
+      font-size: 0.6em;
+    }
+
+    /* Services */
+    .service-img {
+      padding: 1em 1.2em;
+    }
+
+    .service-img > img {
+      width: 2.2em;
+      height: 2.2em;
+    }
+
+    /* News */
+    .news-card {
+      padding: 1em;
+      width: 9.5em;
+      height: 13em;
+    }
+
+    .news-card-body > h3 {
+      font-size: 0.9em;
+    }
+
+    .news-card-body > p {
+      font-size: 0.65em;
+    }
+
+    /* About Company */
+    .about-company-content > img {
+      width: 15em;
+      height: 18em;
+      margin-right: 1.5em;
+    }
+
+    .about-company-content > div > h3 {
+      font-size: 1em;
+    }
+
+    .about-company-content > div > p {
+      font-size: 0.6em;
+    }
+  }
+
+  /* Below 600px */
+  @media only screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    /* Header */
+    /* Navbar */
+    .navbar {
+      grid-template-columns: 0.7fr 2.5fr 1fr;
+    }
+
+    .navbar-link {
+      margin: 0 0.3em;
+    }
+
+    .navbar-link > a {
+      font-size: 0.5em;
+    }
+
+    .search-bar {
+      padding: 0.3em 0;
+    }
+
+    .search-bar > input {
+      font-size: 0.45em;
+    }
+
+    .search-bar > img {
+      width: 0.5em;
+      height: 0.5em;
+    }
+
+    /* Main */
+    /* Services */
+    .services-wrapper > h1 {
+      font-size: 0.95em;
+    }
+
+    .services-content {
+      padding: 0 1.5em;
+    }
+
+    .service-img {
+      padding: 0.9em 1.1em;
+    }
+
+    .service-img > img {
+      width: 2em;
+      height: 2em;
+    }
+
+    .service > h3 {
+      font-size: 0.85em;
+    }
+
+    /* News */
+    .news h1 {
+      font-size: 0.95em;
+    }
+
+    .news-arrows > button > img {
+      width: 1.5em;
+    }
+
+    /* About Company */
+    .about-company-content > img {
+      width: 13em;
+      height: 16em;
+      margin-right: 1.2em;
+    }
+
+    .about-company-content > div > h3 {
+      font-size: 0.9em;
+    }
+
+    .about-company-content > div > p {
+      font-size: 0.6em;
+      width: 100%;
+    }
+
+    /* Footer */
+    .footer-links a {
+      font-size: 0.5em;
+    }
+
+    .social-links img {
+      width: 1.4em;
+      height: 1.4em;
+    }
+
+    .footer-form input {
+      width: 15em;
+      padding: 0.6em;
+      font-size: 0.55em;
+    }
+
+    .footer-form textarea {
+      padding: 0.6em 0.6em 3em;
+      font-size: 0.7em;
+    }
+
+    .form-button {
+      padding: 0.8em;
+      font-size: 0.45em;
+    }
+  }
+
+  /* Below 480px */
+  @media only screen and (max-width: 480px) {
+    .btn {
+      font-size: 0.4em;
+    }
+
+    .brand > img {
+      width: 1em;
+      height: 2em;
+    }
+
+    .brand > h3 {
+      font-size: 0.4em;
+    }
+
+    /* Header */
+    /* Navbar */
+    .navbar-link > a {
+      font-size: 0.42em;
+    }
+
+    .search-bar > input {
+      font-size: 0.4em;
+    }
+
+    /* Main */
+    /* Introduction */
+    .introduction-content {
+      padding: 5em 1.8em 2em;
+    }
+
+    .introduction-content > h1 {
+      font-size: 1.1em;
+    }
+
+    .introduction-content > p {
+      font-size: 0.45em;
+      width: 35em;
+    }
+
+    /* Services */
+    .services-wrapper > h1 {
+      font-size: 0.8em;
+      margin: 0 0 1em;
+    }
+
+    .service-img {
+      padding: 0.8em 0.9em;
+    }
+
+    .service-img > img {
+      width: 1.8em;
+      height: 1.8em;
+    }
+
+    .service > h3 {
+      font-size: 0.65em;
+    }
+
+    /* News */
+    .news h1 {
+      font-size: 0.8em;
+    }
+
+    .news-arrows > button > img {
+      width: 1.2em;
+    }
+
+    .news-card {
+      padding: 1em;
+      width: 8.5em;
+      height: 12em;
+    }
+
+    .news-card-body > h3 {
+      font-size: 0.7em;
+    }
+
+    .news-card-body > p {
+      font-size: 0.5em;
+    }
+
+    /* About Company */
+    .about-company-content > img {
+      width: 10em;
+      height: 12em;
+      margin-right: 1.2em;
+    }
+
+    .about-company-content > div > h3 {
+      font-size: 0.7em;
+    }
+
+    .about-company-content > div > p {
+      font-size: 0.47em;
+    }
+
+    /* Footer */
+    .footer-links a {
+      font-size: 0.4em;
+    }
+
+    .social-links img {
+      width: 2em;
+      height: 2em;
+    }
+
+    .footer-form input {
+      font-size: 0.5em;
+    }
+
+    .footer-form textarea {
+      font-size: 0.65em;
+    }
+
+    .form-button {
+      padding: 0.8em;
+      font-size: 0.4em;
+    }
+  }
 }

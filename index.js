@@ -16,7 +16,16 @@ const newsCard = document.querySelectorAll(".news-card");
 const newsArrows = document.querySelectorAll(".news-arrows > button");
 
 let rangeValue = 0;
-let columnGap = 50;
+let columnGap = 0;
+if (window.innerWidth >= 1024) {
+  columnGap = 50;
+}
+if (window.innerWidth < 1024) {
+  columnGap = 30;
+}
+if (window.innerWidth <= 768) {
+  columnGap = 15;
+}
 
 newsArrows.forEach((arrow) => {
   newsArrows[0].classList.add("disabled-arrow");
@@ -32,7 +41,7 @@ newsArrows.forEach((arrow) => {
         }
         break;
       case "next":
-        if (rangeValue === newsCard.length - 1) {
+        if (rangeValue >= newsCard.length - 1) {
           rangeValue = newsCard.length - 1;
         } else {
           rangeValue++;
