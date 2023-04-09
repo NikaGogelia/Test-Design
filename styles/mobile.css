@@ -1,2 +1,111 @@
 @media only screen and (max-width: 425px) {
+  :root {
+    --paddingX: 0.5em;
+    --introductionPaddingX: 0;
+  }
+
+  .btn {
+    padding: 0.5em 1.5em;
+    font-size: 0.32em;
+  }
+
+  .btn > svg {
+    width: 1em;
+    height: 2em;
+  }
+
+  .brand > img {
+    width: 1em;
+    height: 2em;
+  }
+
+  .brand > h3 {
+    font-size: 0.35em;
+    margin: 0;
+    margin-left: 0.7em;
+  }
+
+  /* Header */
+  header {
+    padding: 0 var(--paddingX);
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.3em 0;
+    grid-template-columns: 0.5fr 2.5fr 0.5fr;
+  }
+
+  .search-bar > input {
+    font-size: 0.35em;
+  }
+
+  /* Main */
+  /* Introduction */
+  .introduction-content {
+    padding: 4em 0.6em 2em;
+  }
+
+  .introduction-content > h1 {
+    font-size: 1em;
+  }
+
+  .introduction-content > p {
+    font-size: 0.4em;
+  }
+
+  /* Services */
+  .services {
+    padding: 2em var(--paddingX);
+  }
+
+  /* News */
+  .news {
+    padding: 2em var(--paddingX);
+  }
+
+  .news-card {
+    width: 6.5em;
+    height: 10em;
+  }
+
+  .news-card-body > h3 {
+    font-size: 0.6em;
+  }
+
+  .news-card-body > p {
+    font-size: 0.4em;
+  }
+
+  /* About Company */
+  .about-company {
+    padding: 3em var(--paddingX);
+  }
+
+  .about-company-content > img {
+    width: 9em;
+    height: 11em;
+    margin-right: 1.2em;
+  }
+
+  .about-company-content > div > h3 {
+    font-size: 0.6em;
+  }
+
+  .about-company-content > div > p {
+    font-size: 0.4em;
+  }
+
+  /* Below 360px */
+  @media only screen and (max-width: 360px) {
+    /* Header */
+    /* Navbar */
+    .navbar-link > a {
+      font-size: 0.35em;
+    }
+
+    .search-bar > input {
+      font-size: 0.32em;
+    }
+  }
 }

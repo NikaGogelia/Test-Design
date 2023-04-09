@@ -4,11 +4,6 @@
     --introductionPaddingX: 2.5em;
   }
 
-  body,
-  html {
-    overflow-x: hidden;
-  }
-
   .btn {
     font-size: 0.65em;
     padding: 0.75em 1.7em;
@@ -25,8 +20,8 @@
   }
 
   .brand > h3 {
-    margin: 0;
     font-size: 0.8em;
+    margin: 0;
     margin-left: 0.7em;
   }
 
