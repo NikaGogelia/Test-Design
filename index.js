@@ -13,12 +13,13 @@ navLinks.forEach((navLink) => {
 // News Slider
 const newsProfiles = document.querySelector(".news-profiles");
 const newsCard = document.querySelectorAll(".news-card");
-const newsArrows = document.querySelectorAll(".news-arrows > img");
+const newsArrows = document.querySelectorAll(".news-arrows > button");
 
 let rangeValue = 0;
 let columnGap = 20;
 
 newsArrows.forEach((arrow) => {
+  newsArrows[0].classList.add("disabled-arrow");
   arrow.addEventListener("click", () => {
     let scrollWidth = 0;
 
@@ -39,6 +40,15 @@ newsArrows.forEach((arrow) => {
         break;
       default:
         break;
+    }
+
+    if (rangeValue === 0) {
+      newsArrows[0].classList.add("disabled-arrow");
+    } else if (rangeValue === newsCard.length - 1) {
+      newsArrows[1].classList.add("disabled-arrow");
+    } else {
+      newsArrows[0].classList.remove("disabled-arrow");
+      newsArrows[1].classList.remove("disabled-arrow");
     }
     scrollWidth += (newsCard[0].clientWidth + columnGap) * rangeValue;
     newsProfiles.style = `left: -${scrollWidth}px`;

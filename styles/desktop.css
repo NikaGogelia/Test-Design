@@ -4,15 +4,16 @@
   }
 
   .btn {
-    font-size: 1em;
-    padding: 0.9em 2em;
+    font-size: 0.9em;
+    padding: 0.9em 1.8em;
   }
 
-  /* Navbar */
+  /* Header */
   header {
     padding: 0 var(--paddingX);
   }
 
+  /* Navbar */
   .navbar {
     padding: 2em 0 0;
     grid-template-columns: 1fr 3fr 1fr;
@@ -110,19 +111,20 @@
 
   /* News */
   .news {
-    padding: 2em var(--paddingX) 6em;
+    padding: 5em var(--paddingX) 10em;
   }
 
   .news h1 {
     font-size: 2em;
   }
 
-  .news-arrows > img {
+  .news-arrows > button {
     margin: 0 1em;
   }
 
   .news-content {
     width: 100vw;
+    margin-top: 3.5em;
     padding: 1em 0;
   }
 
@@ -144,6 +146,29 @@
 
   .news-card-body > p {
     font-size: 1em;
+    margin: 0 0 2em;
+  }
+
+  /* About Company */
+  .about-company {
+    padding: 9em var(--paddingX);
+  }
+
+  .about-company-content > img {
+    width: 36em;
+    height: 40em;
+    margin-right: 5.6em;
+  }
+
+  .about-company-content > div > h3 {
+    font-size: 2em;
+    margin: 0 0 1.2em;
+  }
+
+  .about-company-content > div > p {
+    font-size: 1.1em;
+    width: 37em;
+    line-height: 160%;
     margin: 0 0 2em;
   }
 }
