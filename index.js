@@ -16,7 +16,7 @@ const newsCard = document.querySelectorAll(".news-card");
 const newsArrows = document.querySelectorAll(".news-arrows > button");
 
 let rangeValue = 0;
-let columnGap = 20;
+let columnGap = 50;
 
 newsArrows.forEach((arrow) => {
   newsArrows[0].classList.add("disabled-arrow");
