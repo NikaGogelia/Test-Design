@@ -489,11 +489,31 @@ footer > div > div,
   overflow: hidden;
 }
 
-/* .footer-form div input::placeholder,
+.footer-form div input::-webkit-input-placeholder, .footer-form textarea::-webkit-input-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input::-moz-placeholder, .footer-form textarea::-moz-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input:-ms-input-placeholder, .footer-form textarea:-ms-input-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input::-ms-input-placeholder, .footer-form textarea::-ms-input-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input::placeholder,
 .footer-form textarea::placeholder {
   font-family: var(--montserrat);
   font-weight: 400;
-} */
+}
 
 .form-button {
   position: absolute;
