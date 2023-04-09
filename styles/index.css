@@ -127,6 +127,15 @@ h2 {
   z-index: 0;
 }
 
+.brand {
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 /* Header */
 header {
   background-color: var(--white);
@@ -145,9 +154,6 @@ header {
   align-items: center;
 }
 
-.navbar > div > div {
-}
-
 .navbar > div:first-of-type {
   justify-content: flex-start;
 }
@@ -161,11 +167,7 @@ header {
 }
 
 /* Navbar Brand */
-.brand {
-  text-transform: uppercase;
-}
-
-.brand > h3 {
+.navbar-brand .brand > h3 {
   color: var(--blue);
 }
 
@@ -176,15 +178,21 @@ header {
   align-items: center;
 }
 
+.navbar-link:first-of-type {
+  margin-left: 0;
+}
+
+.navbar-link:last-of-type {
+  margin-right: 0;
+}
+
 .navbar-link .link,
 .navbar-link .link-border {
   transition: 0.3s;
 }
 
 .navbar-link .link {
-  text-decoration: none;
   color: var(--blue);
-  font-weight: 700;
 }
 
 .navbar-link:hover .link,
@@ -414,4 +422,106 @@ header {
 
 .about-company-content > div > p {
   font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: var(--blue);
+  display: grid;
+}
+
+footer > div,
+footer > div > div,
+.footer-form > form {
+  display: flex;
+}
+
+.footer-brand > .brand {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-brand > .brand > h3 {
+  color: var(--white);
+}
+
+.footer-links {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-links > .links {
+  justify-content: space-between;
+}
+
+.footer-links > .links > .link {
+  color: var(--white);
+}
+
+.footer-form {
+  justify-content: flex-end;
+}
+
+.footer-form > form {
+  position: relative;
+  flex-direction: column;
+}
+
+.footer-form div input,
+.footer-form textarea,
+.footer-form div input:active,
+.footer-form textarea:active {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  outline: none;
+  color: var(--white);
+}
+
+.footer-form textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.footer-form div input::-webkit-input-placeholder,
+.footer-form textarea::-webkit-input-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input::-moz-placeholder,
+.footer-form textarea::-moz-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input:-ms-input-placeholder,
+.footer-form textarea:-ms-input-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input::-ms-input-placeholder,
+.footer-form textarea::-ms-input-placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.footer-form div input::placeholder,
+.footer-form textarea::placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+.form-button {
+  position: absolute;
+  color: var(--white);
+  background-color: var(--red);
+  border: none;
+  right: 1em;
+  bottom: 1em;
+}
+
+.form-button:hover {
+  box-shadow: 0 0 0 5px #ef555570;
 }

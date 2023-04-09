@@ -8,6 +8,17 @@
     padding: 0.9em 1.8em;
   }
 
+  .brand > img {
+    width: 3.5em;
+    height: 4.5em;
+  }
+
+  .brand > h3 {
+    font-size: 1.4em;
+    margin: 0;
+    margin-left: 1em;
+  }
+
   /* Header */
   header {
     padding: 0 var(--paddingX);
@@ -17,16 +28,6 @@
   .navbar {
     padding: 2em 0 0;
     grid-template-columns: 1fr 3fr 1fr;
-  }
-
-  .brand > img {
-    width: 3.5em;
-    height: 4.5em;
-  }
-
-  .brand > h3 {
-    font-size: 1.4em;
-    margin: 1em;
   }
 
   .navbar-link {
@@ -170,5 +171,44 @@
     width: 37em;
     line-height: 160%;
     margin: 0 0 2em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 6em var(--paddingX);
+    grid-template-columns: 1.2fr 1.5fr 2fr;
+  }
+
+  .footer-links a {
+    font-size: 1em;
+  }
+
+  .social-links {
+    padding-top: 1em;
+  }
+
+  .social-links > a:first-of-type {
+    margin-right: 1em;
+  }
+
+  .footer-form input {
+    width: 15em;
+    padding: 0.9em 1.1em;
+    font-size: 0.8em;
+  }
+
+  .footer-form input:first-of-type {
+    margin-right: 0.5em;
+  }
+
+  .footer-form textarea {
+    padding: 0.9em 1.1em 3em;
+    margin-top: 1.2em;
+    font-size: 1em;
+  }
+
+  .form-button {
+    padding: 0.8em;
+    font-size: 0.8em;
   }
 }
